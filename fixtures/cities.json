@@ -1,0 +1,21 @@
+[
+  {
+    "model": "radiomamba.core.cities",
+    "pk": 1,
+    "fields": {
+      "name": "Erechim",
+      "state": "Rio Grande do Sul",
+      "country": "Brasil"
+    }
+  },
+  {
+    "model": "radiomamba.core.cities",
+    "pk": 2,
+    "fields": {
+      "name": "Severiano de Almeida",
+      "state": "Rio Grande do Sul",
+      "country": "Brasil"
+    }
+  }
+]
+

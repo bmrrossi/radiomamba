@@ -2,4 +2,6 @@
 
  - Implementar Websockets
 
- 
+ - Corrigir Fixtures
+
+ - Adicionar Translations
