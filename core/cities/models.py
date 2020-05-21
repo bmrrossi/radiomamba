@@ -7,7 +7,7 @@ from core.countries.models import Country
 
 class City(models.Model):
     name = models.CharField(max_length=100)
-    state = models.CharField(max_length=100)
+    state = models.CharField(max_length=100, null=True, blank=True)
     country = models.ForeignKey(Country, on_delete=models.DO_NOTHING)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(default=timezone.now)

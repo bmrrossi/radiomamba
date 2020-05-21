@@ -1,0 +1,21 @@
+<h2>Creating a new station</h2>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{%url 'stations:create' %}" method="post">
+    {% csrf_token %}
+    <label for="name{{ forloop.counter }}">Nome: </label>
+    <input type="text" name="name" id="name{{ forloop.counter }}" /><br />
+
+    <label for="url{{ forloop.counter }}">Url: </label>
+    <input type="text" name="url" id="url{{ forloop.counter }}" /><br />
+
+    <select name='city' id="city{{ forloop.counter }}">
+        {% for city in cities %}
+            <option id="{{ city.id }}">{{ city.name }}</option>
+        {% endfor %}
+    </select><br />
+
+    <input type="submit" value="Create" />
+
+</form>
